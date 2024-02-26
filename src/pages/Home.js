@@ -3,6 +3,7 @@ import imageList from '../assets/imageList';
 import { BannerSlideshow } from '../components/BannerSlideshow';
 import { Showcase } from '../components/Showcase';
 import { Banner } from '../components/Banner';
+import ComponentDisplay from '../components/ComponentDisplay';
 
 const Home = () => {
     return (
@@ -11,8 +12,7 @@ const Home = () => {
               < Banner title = "Welcome" />
             </header>
             <main>
-
-              < Showcase component={BannerSlideshow} data={imageList} title={"Slideshow"} />
+              < ComponentDisplay />
             </main>
             <footer>
   
