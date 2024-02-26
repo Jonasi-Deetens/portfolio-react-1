@@ -6,12 +6,13 @@ import { Banner } from '../components/Banner';
 
 const Home = () => {
     return (
-        <div className="App">
+        <div>
             <header className='bg-gray-50 drop-shadow-sm border-b-2 border-gray-100'>
               < Banner title = "Welcome" />
             </header>
             <main>
-              < Showcase component={BannerSlideshow} data={imageList} />
+
+              < Showcase component={BannerSlideshow} data={imageList} title={"Slideshow"} />
             </main>
             <footer>
   

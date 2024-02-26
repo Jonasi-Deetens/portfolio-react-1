@@ -1,9 +1,17 @@
 import React from 'react'
+import { Banner } from '../components/Banner';
 
 const About = () => {
   return (
     <div>
-        <h2 className='bg-black text-white'>About</h2>
+        <header className='bg-gray-50 drop-shadow-sm border-b-2 border-gray-100'>
+            < Banner title = "About" />
+        </header>
+        <main>
+        </main>
+        <footer>
+
+        </footer>
     </div>
   )
 }
