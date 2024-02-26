@@ -1,15 +1,13 @@
-import { Banner } from './components/Banner';
-import './index.css';
-import imageList from './assets/imageList';
+import { Header } from "./components/Header";
 
 function App() {
-  return (
-    <div className="App">
-      <header>
-        < Banner imageList={imageList} />
-      </header>
-    </div>
-  );
+    return (
+      <div className="App">
+          <header>
+            < Header />
+          </header>
+      </div>
+    );
 }
 
 export default App;

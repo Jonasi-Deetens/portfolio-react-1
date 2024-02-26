@@ -9,9 +9,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/pattern.png');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.banner-header {
+ /* background-image: url('./assets/banner.png');
+  background-size: contain;
+  background-attachment: fixed;*/
 }
