@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./assets/pattern.png');
-  background-color: lightgrey;
+  background-color: rgba(255, 157, 58, 0.4);
 }
 
 code {
@@ -18,8 +18,10 @@ code {
     monospace;
 }
 
-.banner-header {
- /* background-image: url('./assets/banner.png');
-  background-size: contain;
-  background-attachment: fixed;*/
+.bg-home {
+  background-image: url('./assets/home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-color: rgba(235, 196, 247, 0.9);
 }
