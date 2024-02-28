@@ -31,11 +31,11 @@ const Navigation = () => {
                     <li className={activeItem === "home" ? activeNavItem : navItem}>
                     <Link to="/">Home</Link>
                     </li>
-                    <li className={activeItem === "about" ? activeNavItem : navItem}>
-                    <Link to="/about">About</Link>
-                    </li>
                     <li className={activeItem === "components" ? activeNavItem : navItem}>
                     <Link to="/components">Components</Link>
+                    </li>
+                    <li className={activeItem === "about" ? activeNavItem : navItem}>
+                    <Link to="/about">About</Link>
                     </li>
                 </ul>
             </nav>

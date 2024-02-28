@@ -7,8 +7,8 @@ export const Timer = () => {
     useEffect(() => {
         if (active){
             const timerInterval = setInterval(() => {
-                setTime(time + 1);
-            }, 1000);
+                setTime(time + 0.01);
+            }, 10);
 
             return() => clearInterval(timerInterval);
         }
@@ -16,10 +16,10 @@ export const Timer = () => {
 
     return (
         <div>
-            <p>Time elapsed: {time}s</p>
-            <button onClick={() => setActive(true)} className='border-2 p-2 hover:text-white hover:bg-black'>Start</button>
-            <button onClick={() => setActive(false)} className='border-2 p-2 hover:text-white hover:bg-black'>Stop</button>
-            <button onClick={() => setTime(0)} className='border-2 p-2 hover:text-white hover:bg-black'>Reset</button>
+            <p>Time elapsed: {time.toFixed(2)}s</p>
+            <button onClick={() => setActive(true)} className='border-2 px-2 active:text-black active:bg-pink-400 hover:bg-cyan-400'>Start</button>
+            <button onClick={() => setActive(false)} className='border-2 px-2 active:text-black active:bg-pink-400 hover:bg-cyan-400'>Stop</button>
+            <button onClick={() => setTime(0)} className='border-2 px-2 active:text-black active:bg-pink-400 hover:bg-cyan-400'>Reset</button>
         </div>
     )
 }

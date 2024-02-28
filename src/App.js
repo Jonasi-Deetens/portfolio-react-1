@@ -2,10 +2,10 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Components from "./pages/Components";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import HomeNavigation from "./components/HomeNavigation";
-import HomeFooter from "./components/HomeFooter";
+import Navigation from "./webcomponents/Navigation";
+import Footer from "./webcomponents/Footer";
+import HomeNavigation from "./webcomponents/HomeNavigation";
+import HomeFooter from "./webcomponents/HomeFooter";
 
 function App() {
   let location = useLocation();
