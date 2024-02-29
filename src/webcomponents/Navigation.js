@@ -27,7 +27,7 @@ const Navigation = () => {
     return (
         <div className='flex flex-col justify-between items-center border-gray-300 bg-gray-100 text-center'>
             <div className='flex text-4xl justify-center p-6 border-b-2 border-gray-300 w-full'>
-                <img src={logo} alt="logo of the company" />
+                <img className='mr-8' src={logo} alt="logo of the company" />
                 <p>YouX - Your Components</p>
             </div>
             <nav className='px-10 border-b-2 w-full text-center'>
