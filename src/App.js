@@ -11,19 +11,19 @@ function App() {
   let location = useLocation();
   return (
     <div className="App">
-            <header>
-              {location.pathname === "/" ? <HomeNavigation /> : <Navigation />}
-            </header>
-            <main>
-                <Routes>
-                    <Route path="/" exact element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/components" element={<Components />} />
-                </Routes>
-            </main>
-            <footer>
-              {location.pathname === "/" ? <HomeFooter /> : <Footer />}
-            </footer>
+      <header>
+        {location.pathname === "/" ? <HomeNavigation /> : <Navigation />}
+      </header>
+      <main className="h-100">
+          <Routes>
+              <Route path="/" exact element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/components" element={<Components />} />
+          </Routes>
+      </main>
+      <footer>
+        {location.pathname === "/" ? <HomeFooter /> : <Footer />}
+      </footer>
     </div>
   );
 }

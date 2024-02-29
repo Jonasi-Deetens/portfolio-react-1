@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/logo-youx.png';
 
 const Navigation = () => {
     const navItem = "m-2 p-1 border-b-2 border-black text-black text-md hover:border-pink-400 font-bold";
@@ -25,7 +26,10 @@ const Navigation = () => {
 
     return (
         <div className='flex flex-col justify-between items-center border-gray-300 bg-gray-100 text-center'>
-            <p className='text-4xl p-6 border-b-2 border-gray-300 w-full'>YouX - Your Components</p>
+            <div className='flex text-4xl justify-center p-6 border-b-2 border-gray-300 w-full'>
+                <img src={logo} alt="logo of the company" />
+                <p>YouX - Your Components</p>
+            </div>
             <nav className='px-10 border-b-2 w-full text-center'>
                 <ul className='flex justify-center'>
                     <li className={activeItem === "home" ? activeNavItem : navItem}>
